@@ -84,6 +84,51 @@ document.addEventListener("DOMContentLoaded", function () {
   var yearEl = document.getElementById("current-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* -- 5bis. Fenêtres modales (détail de projet) ----------------------------- */
+  var openModalTriggers = document.querySelectorAll("[data-modal-open]");
+  var lastFocusedEl = null;
+
+  function openModal(modal, trigger) {
+    if (!modal) return;
+    lastFocusedEl = trigger || document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    var closeBtn = modal.querySelector(".modal-close");
+    if (closeBtn) closeBtn.focus();
+    document.addEventListener("keydown", onModalKeydown);
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+    document.removeEventListener("keydown", onModalKeydown);
+    if (lastFocusedEl) lastFocusedEl.focus();
+  }
+
+  function onModalKeydown(event) {
+    if (event.key === "Escape") {
+      var openModalEl = document.querySelector(".modal-overlay:not([hidden])");
+      closeModal(openModalEl);
+    }
+  }
+
+  openModalTriggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function () {
+      var modal = document.getElementById(trigger.getAttribute("data-modal-open"));
+      openModal(modal, trigger);
+    });
+  });
+
+  document.querySelectorAll("[data-modal-close]").forEach(function (el) {
+    el.addEventListener("click", function (event) {
+      // Sur le fond (overlay), ne fermer que si le clic touche le fond lui-même, pas le panneau.
+      // Sur le bouton de fermeture, toujours fermer (même en cliquant sur l'icône à l'intérieur).
+      if (el.classList.contains("modal-overlay") && event.target !== el) return;
+      closeModal(el.closest(".modal-overlay"));
+    });
+  });
+
   /* -- 6. Formulaire de contact ----------------------------------------------
      Envoi en arrière-plan (AJAX) vers Formspree, sans recharger la page.
      Le formulaire garde son attribut action/method (voir index.html) comme

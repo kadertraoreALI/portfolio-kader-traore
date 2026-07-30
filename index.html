@@ -367,6 +367,31 @@
 
       <div class="card-grid">
 
+        <!-- Projet phare : Médicobus -->
+        <article class="project-card project-card-flagship reveal">
+          <div class="project-media">
+            <img src="images/medicobus-vue-generale.svg" alt="Emplacement de capture d'écran temporaire du tableau de bord du Médicobus" loading="lazy" width="600" height="340">
+          </div>
+          <div class="project-body">
+            <span class="project-tag project-tag-flagship">Réalisation phare · Power BI</span>
+            <h3>Tableau de bord de suivi du Médicobus</h3>
+            <p class="project-teaser">
+              Conception d'un outil de suivi centralisant les données d'activité du Médicobus afin de piloter le
+              dispositif, comparer les communes et mieux connaître les publics accompagnés.
+            </p>
+
+            <div class="project-footer">
+              <div class="meta-row">
+                <span class="chip">Excel</span>
+                <span class="chip">Power Query</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Cartographie</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-modal-open="modal-medicobus">Découvrir le projet</button>
+            </div>
+          </div>
+        </article>
+
         <!-- Projet 1 -->
         <article class="project-card reveal">
           <div class="project-media">
@@ -651,19 +676,59 @@
 
       <div class="skills-grid">
 
-        <div class="skill-category reveal">
+        <div class="skill-category skill-category-featured reveal">
           <div class="skill-category-head">
             <span class="skill-icon" aria-hidden="true">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
             </span>
-            <h3>Analyse de données</h3>
+            <h3>Analyse, traitement et valorisation des données</h3>
           </div>
-          <ul class="skill-tags">
-            <li>Excel</li><li>Power Query</li><li>Power BI</li><li>R</li>
-            <li>Nettoyage de données</li><li>Création d'indicateurs</li>
-            <li>Statistiques descriptives</li><li>Analyses bivariées</li>
-            <li>Visualisation de données</li><li>Tableaux de bord</li>
-          </ul>
+          <p class="skill-category-desc">
+            De la préparation des bases à la création d'indicateurs et de tableaux de bord, je mobilise les données
+            pour produire des analyses fiables, lisibles et utiles à la prise de décision.
+          </p>
+
+          <div class="skill-tools-row">
+            <span class="tool-chip">Excel</span>
+            <span class="tool-chip">Power Query</span>
+            <span class="tool-chip">Power BI</span>
+            <span class="tool-chip">R</span>
+            <span class="tool-chip">STATA</span>
+          </div>
+
+          <div class="skill-subgrid">
+            <div class="skill-subcategory">
+              <div class="skill-subcategory-head">
+                <span class="skill-subicon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                </span>
+                <h4>Traitement et analyse</h4>
+              </div>
+              <ul class="skill-list">
+                <li>Nettoyage et structuration des bases</li>
+                <li>Contrôle de la qualité des données</li>
+                <li>Construction d'indicateurs</li>
+                <li>Analyse statistique descriptive</li>
+                <li>Analyses comparatives et bivariées</li>
+                <li>Suivi des évolutions temporelles</li>
+              </ul>
+            </div>
+
+            <div class="skill-subcategory">
+              <div class="skill-subcategory-head">
+                <span class="skill-subicon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </span>
+                <h4>Valorisation et restitution</h4>
+              </div>
+              <ul class="skill-list">
+                <li>Visualisation de données</li>
+                <li>Conception de tableaux de bord</li>
+                <li>Reporting et synthèse des résultats</li>
+                <li>Aide à la décision</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="skill-category reveal">
@@ -921,6 +986,130 @@
   </section>
 
 </main>
+
+<!-- ============================== MODALE : PROJET MÉDICOBUS ============================== -->
+<div class="modal-overlay" id="modal-medicobus" data-modal-close hidden>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-medicobus-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Fermer la fenêtre">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <span class="project-tag project-tag-flagship">Réalisation phare · Power BI</span>
+    <h3 id="modal-medicobus-title">Tableau de bord de suivi du Médicobus</h3>
+
+    <div class="project-block">
+      <h4>Contexte</h4>
+      <p>Le Médicobus est un dispositif de consultations médicales itinérantes destiné à améliorer l'accès aux soins dans plusieurs communes du territoire. Son suivi nécessite de centraliser, nettoyer et analyser les données d'activité afin de disposer d'indicateurs fiables pour le pilotage du dispositif.</p>
+    </div>
+
+    <div class="project-block">
+      <h4>Objectif du projet</h4>
+      <p>Concevoir un outil de suivi permettant :</p>
+      <ul>
+        <li>d'analyser l'activité du Médicobus ;</li>
+        <li>de suivre son évolution dans le temps ;</li>
+        <li>de comparer l'activité entre les communes ;</li>
+        <li>d'évaluer le remplissage des permanences ;</li>
+        <li>de mieux connaître les caractéristiques des publics accompagnés ;</li>
+        <li>de faciliter la production des bilans et l'aide à la décision.</li>
+      </ul>
+    </div>
+
+    <div class="project-block">
+      <h4>Mes contributions</h4>
+      <ul>
+        <li>Centralisation des fichiers de suivi</li>
+        <li>Nettoyage et structuration des données</li>
+        <li>Vérification de la cohérence des informations</li>
+        <li>Harmonisation des variables et des catégories</li>
+        <li>Création d'indicateurs de suivi</li>
+        <li>Mise à jour régulière de la base de données</li>
+        <li>Analyse de l'activité par période et par commune</li>
+        <li>Conception d'un tableau de bord interactif</li>
+        <li>Création de graphiques et de cartes</li>
+        <li>Contribution à la réalisation du rapport d'activité</li>
+        <li>Présentation synthétique des résultats aux acteurs du dispositif</li>
+      </ul>
+    </div>
+
+    <div class="project-block">
+      <h4>Indicateurs suivis</h4>
+      <ul>
+        <li>Nombre de consultations</li>
+        <li>Évolution mensuelle de l'activité</li>
+        <li>Activité par commune</li>
+        <li>Taux de remplissage des permanences</li>
+        <li>Nombre de patients sans médecin traitant</li>
+        <li>Bénéficiaires de la Complémentaire santé solidaire</li>
+        <li>Patients en affection de longue durée</li>
+        <li>Personnes âgées accompagnées</li>
+        <li>Patients sans complémentaire santé</li>
+        <li>Comparaison de l'activité entre différentes périodes</li>
+      </ul>
+    </div>
+
+    <div class="project-block">
+      <h4>Outils utilisés</h4>
+      <div class="meta-row">
+        <span class="chip">Excel</span>
+        <span class="chip">Power Query</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Cartographie</span>
+        <span class="chip">Traitement et visualisation de données</span>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <h4>Livrables</h4>
+      <ul>
+        <li>Base de données nettoyée et structurée</li>
+        <li>Indicateurs de suivi</li>
+        <li>Tableau de bord Power BI interactif</li>
+        <li>Graphiques d'évolution</li>
+        <li>Cartes de l'activité par commune</li>
+        <li>Synthèses destinées aux partenaires</li>
+        <li>Contribution au rapport annuel d'activité</li>
+      </ul>
+    </div>
+
+    <div class="project-block">
+      <h4>Compétences mobilisées</h4>
+      <div class="meta-row">
+        <span class="chip">Traitement et fiabilisation des données</span>
+        <span class="chip">Construction d'indicateurs</span>
+        <span class="chip">Analyse territoriale</span>
+        <span class="chip">Conception de tableaux de bord</span>
+        <span class="chip">Visualisation de données</span>
+        <span class="chip">Reporting</span>
+        <span class="chip">Aide à la décision</span>
+        <span class="chip">Restitution de résultats</span>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <h4>Captures d'écran</h4>
+      <p class="form-hint">Emplacements temporaires — captures anonymisées définitives à venir.</p>
+      <div class="modal-gallery">
+        <figure>
+          <img src="images/medicobus-vue-generale.svg" alt="Emplacement de capture : vue générale du tableau de bord" loading="lazy" width="600" height="340">
+          <figcaption>Vue générale du tableau de bord</figcaption>
+        </figure>
+        <figure>
+          <img src="images/medicobus-evolution-activite.svg" alt="Emplacement de capture : évolution de l'activité" loading="lazy" width="600" height="340">
+          <figcaption>Évolution de l'activité</figcaption>
+        </figure>
+        <figure>
+          <img src="images/medicobus-activite-commune.svg" alt="Emplacement de capture : activité par commune" loading="lazy" width="600" height="340">
+          <figcaption>Activité par commune</figcaption>
+        </figure>
+        <figure>
+          <img src="images/medicobus-publics-accompagnes.svg" alt="Emplacement de capture : caractéristiques des publics accompagnés" loading="lazy" width="600" height="340">
+          <figcaption>Caractéristiques des publics accompagnés</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ============================== PIED DE PAGE ============================== -->
 <footer class="site-footer">

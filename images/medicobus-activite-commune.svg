@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Emplacement de capture d'écran temporaire : activité du Médicobus par commune">
+  <rect width="600" height="340" fill="#EAF3F6"/>
+  <rect x="0" y="0" width="600" height="340" fill="none" stroke="#D7E6EA" stroke-width="2"/>
+  <text x="30" y="42" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0B3D62">Activité par commune</text>
+  <text x="30" y="64" font-family="Arial, sans-serif" font-size="12" fill="#5B6472">Capture à venir</text>
+  <rect x="40" y="130" width="55" height="150" fill="#1E9AAE"/>
+  <rect x="110" y="90" width="55" height="190" fill="#0B3D62"/>
+  <rect x="180" y="160" width="55" height="120" fill="#5FD0D9"/>
+  <rect x="250" y="110" width="55" height="170" fill="#145374"/>
+  <rect x="320" y="180" width="55" height="100" fill="#1E9AAE"/>
+  <rect x="390" y="140" width="55" height="140" fill="#0B3D62"/>
+  <rect x="460" y="200" width="55" height="80" fill="#5FD0D9"/>
+  <line x1="30" y1="290" x2="580" y2="290" stroke="#0B3D62" stroke-width="2"/>
+</svg>

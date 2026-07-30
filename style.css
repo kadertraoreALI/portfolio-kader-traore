@@ -640,6 +640,98 @@ textarea:focus-visible {
   border-top: 1px solid var(--color-border);
 }
 
+.project-teaser {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.project-card-flagship {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+.project-tag-flagship {
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+}
+
+/* --- 9bis. Fenêtre modale (détail de projet) --------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 27, 43, 0.65);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 1.25rem;
+  overflow-y: auto;
+  z-index: 900;
+}
+.modal-overlay[hidden] { display: none; }
+
+.modal-panel {
+  position: relative;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  width: 100%;
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-lg);
+  animation: modal-in 0.25s ease;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-panel h3 {
+  font-size: 1.35rem;
+  margin-top: 0.7rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+.modal-close:hover { background: var(--color-accent-light); }
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  margin-top: 0.8rem;
+}
+.modal-gallery figure {
+  margin: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+.modal-gallery img { width: 100%; height: auto; display: block; }
+.modal-gallery figcaption {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  padding: 0.5rem 0.7rem;
+  border-top: 1px solid var(--color-border);
+}
+
+body.modal-open { overflow: hidden; }
+
 /* --- 10. Travaux académiques ------------------------------------------------------ */
 .academic-card {
   background: var(--color-bg);
@@ -726,6 +818,84 @@ textarea:focus-visible {
   border: 1px solid var(--color-border);
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
+}
+
+/* --- 11bis. Carte de compétences "featured" (analyse de données) --------------------- */
+.skill-category-featured {
+  grid-column: span 2;
+}
+
+.skill-category-desc {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.skill-tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.tool-chip {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.skill-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.skill-subcategory-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.7rem;
+}
+
+.skill-subicon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--color-accent-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.skill-subcategory h4 {
+  font-size: 0.86rem;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.skill-list { margin: 0; }
+.skill-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+.skill-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
 }
 
 /* --- 12. Formation / certifications -------------------------------------------------- */
@@ -983,6 +1153,10 @@ textarea { resize: vertical; min-height: 130px; }
   .form-row-double { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; text-align: left; }
   section { padding: var(--space-xl) 0; }
+  .modal-gallery { grid-template-columns: 1fr; }
+  .modal-panel { padding: var(--space-md); }
+  .skill-category-featured { grid-column: span 1; }
+  .skill-subgrid { grid-template-columns: 1fr; gap: var(--space-md); }
 }
 
 @media (max-width: 480px) {
