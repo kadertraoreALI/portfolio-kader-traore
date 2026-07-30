@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Illustration du projet sur l'attractivité médicale">
+  <rect width="600" height="340" fill="#EAF3F6"/>
+  <rect x="0" y="0" width="600" height="340" fill="none" stroke="#D7E6EA" stroke-width="2"/>
+  <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0B3D62">Étude d'attractivité médicale</text>
+  <circle cx="150" cy="200" r="80" fill="none" stroke="#1E9AAE" stroke-width="26" stroke-dasharray="330 502"/>
+  <circle cx="150" cy="200" r="80" fill="none" stroke="#0B3D62" stroke-width="26" stroke-dasharray="502" stroke-dashoffset="330" opacity="0.25"/>
+  <text x="150" y="207" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0B3D62" text-anchor="middle">44</text>
+  <text x="150" y="228" font-family="Arial, sans-serif" font-size="12" fill="#4B5563" text-anchor="middle">réponses</text>
+  <rect x="300" y="90" width="40" height="200" fill="#5FD0D9"/>
+  <rect x="360" y="140" width="40" height="150" fill="#1E9AAE"/>
+  <rect x="420" y="60" width="40" height="230" fill="#0B3D62"/>
+  <rect x="480" y="180" width="40" height="110" fill="#145374"/>
+  <line x1="20" y1="290" x2="580" y2="290" stroke="#0B3D62" stroke-width="2"/>
+  <text x="30" y="315" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Facteurs d'installation des internes et jeunes médecins (illustration)</text>
+</svg>

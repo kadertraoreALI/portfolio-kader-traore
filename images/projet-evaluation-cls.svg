@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Illustration du projet d'évaluation des inégalités sociales et territoriales de santé">
+  <rect width="600" height="340" fill="#EAF3F6"/>
+  <rect x="0" y="0" width="600" height="340" fill="none" stroke="#D7E6EA" stroke-width="2"/>
+  <text x="30" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0B3D62">Évaluation du Contrat Local de Santé</text>
+  <rect x="30" y="70" width="130" height="220" fill="#1E9AAE" opacity="0.85"/>
+  <rect x="175" y="120" width="130" height="170" fill="#0B3D62" opacity="0.85"/>
+  <rect x="320" y="150" width="130" height="140" fill="#5FD0D9" opacity="0.85"/>
+  <rect x="465" y="95" width="105" height="195" fill="#145374" opacity="0.85"/>
+  <line x1="20" y1="290" x2="580" y2="290" stroke="#0B3D62" stroke-width="2"/>
+  <text x="30" y="315" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Indicateurs territoriaux — matrice de contribution ISTS (illustration)</text>
+</svg>
