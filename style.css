@@ -820,11 +820,7 @@ body.modal-open { overflow: hidden; }
   border-radius: 999px;
 }
 
-/* --- 11bis. Carte de compétences "featured" (analyse de données) --------------------- */
-.skill-category-featured {
-  grid-column: span 2;
-}
-
+/* --- 11bis. Carte de compétences "Analyse et valorisation des données" --------------- */
 .skill-category-desc {
   color: var(--color-text-muted);
   font-size: 0.92rem;
@@ -847,55 +843,6 @@ body.modal-open { overflow: hidden; }
   background: var(--color-primary);
   padding: 0.35rem 0.85rem;
   border-radius: 999px;
-}
-
-.skill-subgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-lg);
-}
-
-.skill-subcategory-head {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 0.7rem;
-}
-
-.skill-subicon {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: var(--color-accent-light);
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.skill-subcategory h4 {
-  font-size: 0.86rem;
-  margin: 0;
-  color: var(--color-primary);
-}
-
-.skill-list { margin: 0; }
-.skill-list li {
-  position: relative;
-  padding-left: 1.1rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  line-height: 1.4;
-}
-.skill-list li::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0.55em;
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--color-accent);
 }
 
 /* --- 12. Formation / certifications -------------------------------------------------- */
@@ -1155,8 +1102,6 @@ textarea { resize: vertical; min-height: 130px; }
   section { padding: var(--space-xl) 0; }
   .modal-gallery { grid-template-columns: 1fr; }
   .modal-panel { padding: var(--space-md); }
-  .skill-category-featured { grid-column: span 1; }
-  .skill-subgrid { grid-template-columns: 1fr; gap: var(--space-md); }
 }
 
 @media (max-width: 480px) {
