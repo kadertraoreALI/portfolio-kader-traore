@@ -7,5 +7,5 @@
   <polygon points="380,170 480,130 550,200 470,270 390,250" fill="#5FD0D9" opacity="0.85"/>
   <polygon points="160,220 230,220 250,290 140,290" fill="#145374" opacity="0.85"/>
   <line x1="20" y1="300" x2="580" y2="300" stroke="#0B3D62" stroke-width="2"/>
-  <text x="30" y="322" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Zonage communal — indicateurs démographiques et sanitaires (illustration)</text>
+  <text x="30" y="322" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Zonage communal - indicateurs démographiques et sanitaires (illustration)</text>
 </svg>

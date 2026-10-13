@@ -7,5 +7,5 @@
   <rect x="320" y="150" width="130" height="140" fill="#5FD0D9" opacity="0.85"/>
   <rect x="465" y="95" width="105" height="195" fill="#145374" opacity="0.85"/>
   <line x1="20" y1="290" x2="580" y2="290" stroke="#0B3D62" stroke-width="2"/>
-  <text x="30" y="315" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Indicateurs territoriaux — matrice de contribution ISTS (illustration)</text>
+  <text x="30" y="315" font-family="Arial, sans-serif" font-size="13" fill="#4B5563">Indicateurs territoriaux - matrice de contribution ISTS (illustration)</text>
 </svg>
