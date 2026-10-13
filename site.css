@@ -92,7 +92,7 @@ button { font-family: var(--body); }
 .btn:hover { background: #f2f8f9; border-color: var(--accent); }
 .btn.primary { background: var(--ink); color: var(--white); border-color: var(--ink); box-shadow: 0 5px 15px #1736530d; }
 .btn.primary:hover { background: #204a65; border-color: #204a65; }
-.experience-page .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.experience-page .cards, .certification-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .experience-org { font-weight: 600; color: #31566c; }
 .skills-earned { font-size: 14px !important; margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
 
@@ -161,7 +161,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   h1 { font-size: clamp(2.35rem, 9vw, 3.1rem); }
   .page-intro { padding-top: 36px; }
   .home .page-intro::after { display: none; }
-  .cards, .experience-page .cards { grid-template-columns: 1fr; }
+  .cards, .experience-page .cards, .certification-cards { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; gap: 10px; }
   .project img { height: 190px; }
   .hero { padding: 25px 22px; border-radius: 16px; }
