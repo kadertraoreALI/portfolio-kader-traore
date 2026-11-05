@@ -275,3 +275,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   html { scroll-behavior: auto; }
   .head nav a, .btn, .filter-chip, .route-card { transition: none; }
 }
+
+/* Vidéo de présentation sur toute la largeur de l'accueil */
+.home-video-section { padding-top: 26px; padding-bottom: 38px; }
+.home-video-heading { margin-bottom: 18px; }
+.home-video-heading .eyebrow { display: block; margin-bottom: 8px; }
+.home-video-heading h2 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.25rem); }
+.home-video-player { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 20px; background: #101d32; box-shadow: 0 24px 60px rgba(16, 29, 50, .16); }
+@media (max-width: 640px) { .home-video-section { padding-top: 16px; padding-bottom: 28px; } .home-video-player { border-radius: 12px; } }
